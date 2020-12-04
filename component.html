@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+
+    <!--CSS Using Style Tag In HTML -->
+    <!-- Type 1 : Whith Style Tag
+        <style>
+        body{
+            color: red;
+            }
+        </style>
+    -->
+
+    <!-- Type 2 : Within Tag
+    <div style= "color:red;"></div>
+    -->
+
+    <!-- Type 3 : External CSS
+      
+    -->
+    <link href="/Styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Typography : How You Write Things -->
+    <!-- Symentic HTML -->
+    <!-- Meaning Full TAGS div is just a placeholder -->
+    <!-- h1 to h6 : Heading Size -->
+    <!-- <p> Paragraph Tags,Normal Text -->
+    <!-- <hr> : Thematic Break, Line   -->
+    <!-- <small> : Relatively Smaller Text -->
+    <h1>Ishan Jirety's Component Library</h1>
+    <p>Building My Own Component Library To Assemble it into One Project</p>
+
+    <hr>
+    <h2>@typography</h2>
+    <h1>Biggest Heading</h1>
+    <h2>Smaller Heading</h2>
+    <h3>Smaller Heading</h3>
+    <h4>Smaller Heading</h4>
+    <h5>Smaller Heading</h5>
+    <h6>Smaller Heading</h6>
+    <small>Slightly Smaller Text</small>
+    <p>This Paragraph Will Have <strong>Bold Text</strong></p>
+    <hr>
+    <!-- accessiblity Tree  Screen Reader-->
+
+    <h2>@container</h2>
+
+    <h3>Center Container</h3>
+    <!-- Start To End Of Page Navbar,Footers etc. -->
+    <div Class="container center-container">This Is a Center container will remain in center</div>
+
+    <hr>
+    <!-- Which Connects To Defferent Page -->
+    <h2>@Links</h2>
+    <!-- Anchor tag -->
+    <a href="#" class="link link-primary">Primary Link</a>
+    <a href="#" class="link link-secondary">Secondary Link</a>
+    <hr>
+
+    <!-- Block Elements : Which Takes Entire Line (ex. h3,p)-->
+    <!-- Inline Element : Which Takes Its Own Space (ex. Small,a)-->
+
+    <h2>@lists</h2>
+    <!--Unordered List : <ul>  -->
+    <h3>Unordered List<h3>
+            <p>this list will not have bullet</p>
+            <ul class="list-non-bullet">
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three </li>
+            </ul>
+            <!-- Through CSS -->
+            <h3>Inlne Unorder List</h3>
+            <ul>
+                <li class="list-items-inline">Inline Item One</li>
+                <li class="list-items-inline">Inline Item Two</li>
+                <li class="list-items-inline">Inline Item Three</li>
+            </ul>
+            <!-- Through CSS  -->
+            <h3>Reverse Ordered List</h3>
+            <ol reversed>
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+            </ol>
+            <hr>
+
+            <!-- To navigate Or traverse -->
+            <h2>@nav</h2>
+            <nav class="navigation container ">
+                <div class="nav-brand ">Brand Name</div>
+                <ul class="list-non-bullet nav-pills">
+                    
+                    <li class="list-items-inline"><a href="#" class="link link-active">Home</a></li>
+                    <li class="list-items-inline"><a href="#" class="link ">About</a></li>
+                    <li class="list-items-inline"><a href="#" class="link ">Blogs</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <!-- Banners Or Intro -->
+            <h2>@header</h2>
+            <header class="hero">
+                <!-- Undraw.co For Images UI/UX -->
+                <!-- Tailwind Colors With Hexes -->
+                <!-- SVG for Web Site Does not Blurr When Zooming In -->
+                <!-- PNG For Blog Post Gets Blurred But Good For Posts-->
+                <img src="/Images/Hero.svg" alt="" class="hero-img" />
+                <h1 class="hero-heading">Heading Inside <span class="heading-inverted">Header/Hero</span></h1>
+            </header>
+
+            <h2>@Section</h2>
+            
+            <section class="section">
+                <div class="container container-center"><h1>White Section</h1>
+                    <p> Discuss the game we all love,Both International and Domestic cricket,from around the world,
+                        as well as cricketing issues</P>
+                
+            </section>
+
+            
+            <section class="section section-Offwhite">
+                <div class="container container-center">
+                <h1>Off White Section</h1>
+                <p>This Will Have Grey Background</p>
+            </div>
+            </section>
+
+            <hr>
+            <h2>@footer</h2>
+            <footer class="footer">
+                <div class="footer-headers">Some Small Heading Inside Footer</div>
+                <ul class="social-links list-non-bullet">
+                    <li class="list-items-inline"><a href="#" class="link">Item One</a></li>
+                    <li class="list-items-inline"><a href="#" class="link">Item Two</a></li>
+                    <li class="list-items-inline"><a href="#" class="link">Item Three</a></li>
+                </ul>
+            </footer>
+
+            <!-- <div style="height: 30vh ;"></div> -->
+</body>
+
+</html>
+<!-- Left Here -->
+<!-- https://youtu.be/u6_a0d94A1Q?t=4879 -->
