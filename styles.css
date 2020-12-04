@@ -1,0 +1,172 @@
+/* body{
+    color:black;;
+}
+h1,h2{
+    color:blue
+}
+ID 
+#lib-Header{
+    color: grey;
+}
+Class
+.para{
+    color: pink;
+} */
+
+
+/*Typography*/
+/*Fixing Fonts Google Fonts*/
+/*Good Fonts
+    1)Sans Or OpenSans
+    2)Montserrat
+    3)Noto Sans
+    4)Lato
+    */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+/*Container*/
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /*rem Adjusting Accorging fonts*/
+}
+.center-container{
+   max-width: 600px;
+   margin:auto; /*Center*/
+
+}
+/*CSS variables*/
+:root{
+    --primary-color:#10B981;
+    --dark-grey:#374151;
+    --off-white:#F3F4F6;
+}
+
+/*Hr*/
+hr{
+    margin: 1rem 0rem;
+}
+/*Links*/
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.link-primary{
+    background-color:var(--primary-color);
+    border-radius: 0.5rem;
+    color:white
+}
+.link-secondary{
+    color:var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+/*BEM Naming Convenction CSS*/
+
+/*Lists*/
+.list-non-bullet{
+    list-style:none;
+}
+.list-items-inline{
+    display: inline;
+    padding: 2rem 0.5rem;
+}
+/*Navigation*/
+.navigation{
+    background-color: var(--primary-color);
+    color:white;
+    padding:0.2rem;
+    padding-left: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.navigation .link{
+    color: white;
+}
+.navigation .nav-pills{
+    text-align: right;
+    padding-bottom:20px;
+    margin-bottom:-5px;
+    margin-top:-5px;
+    display: block;
+      }
+.navigation .nav-brand{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center; 
+    padding:10px;
+    margin:0px;
+    display: inline-block;
+    vertical-align: top;
+}
+.navigation .link-active{
+    font-weight: bold;
+}
+.navigation .nav-logo{
+    max-width: 50px; 
+    border-radius: 50rem;
+    text-align: center; 
+    padding:0px;
+    margin:0px;
+    display: inline-block;
+    vertical-align: top;
+}
+/*Header*/
+.hero{
+    padding:2rem;
+}
+.hero .hero-img{
+    max-width: 350px;
+    display: block;
+    margin: auto; /*Center*/
+
+}
+.hero .hero-heading{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--dark-grey);
+    text-align: center;
+}
+
+/* Highlighting A particualr 
+text Within text*/
+.hero .heading-inverted{
+    color:var(--primary-color);
+}
+
+/* Section */
+.section{
+    padding:1rem;
+    text-align: center;
+}
+.section h1{
+    text-align: center;
+    padding : 2rem;
+}
+.section-Offwhite{
+    background-color:var(--off-white);
+}
+/*footer*/
+.footer{
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    margin-top:1rem;
+    border-top-left-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+}
+.footer .link{
+    color: white;
+}
+.footer ul{
+    padding-inline-start: 0px;
+    /*UserAgent Style Padding
+    Was Applide To Over Right Have to Apply 
+    This Property GOT by Inspect Element*/
+}
